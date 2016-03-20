@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.*?>
+<?import javafx.scene.effect.*?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane fx:id="root" prefHeight="795.0" prefWidth="1200.0" xmlns="http://javafx.com/javafx/8.0.40" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mvcPackage.MVCController">
+   <children>
+      <StackPane prefHeight="795.0">
+         <children>
+            <ImageView fitHeight="150.0" fitWidth="1200.0" pickOnBounds="true" preserveRatio="true" />
+            <BorderPane fx:id="borderPane" prefHeight="795.0">
+               <center>
+                  <VBox fx:id="vBox" prefHeight="600.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox fx:id="hb1" prefHeight="127.0" prefWidth="1200.0" />
+                        <HBox fx:id="hb2" prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <VBox fx:id="vbh3" prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <StackPane fx:id="stack3" alignment="CENTER_LEFT" prefHeight="125.0" prefWidth="275.0">
+                                       <children>
+                                          <Rectangle fx:id="rect3" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="118.0" stroke="#3c4f57" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="5.0" width="88.0">
+                                             <StackPane.margin>
+                                                <Insets left="35.0" />
+                                             </StackPane.margin>
+                                          </Rectangle>
+                                          <HBox fx:id="player3Cards" prefHeight="125.0" prefWidth="275.0" />
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="280.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="vbsplith3" prefHeight="150.0" prefWidth="275.0">
+                                 <children>
+                                    <HBox fx:id="splitPlayerCards3" prefHeight="125.0" prefWidth="275.0" />
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="vbh1" prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <StackPane fx:id="stack1" alignment="CENTER_LEFT" prefHeight="125.0" prefWidth="275.0">
+                                       <children>
+                                          <Rectangle fx:id="rect1" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="118.0" stroke="#3c4f57" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="5.0" width="88.0">
+                                             <StackPane.margin>
+                                                <Insets left="35.0" />
+                                             </StackPane.margin>
+                                          </Rectangle>
+                                          <HBox fx:id="playerCards" prefHeight="125.0" prefWidth="275.0">
+                                             <StackPane.margin>
+                                                <Insets />
+                                             </StackPane.margin>
+                                          </HBox>
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                              </VBox>
+                              <VBox fx:id="vbsplith1" prefHeight="150.0" prefWidth="275.0">
+                                 <children>
+                                    <HBox fx:id="splitPlayerCards" prefHeight="125.0" prefWidth="275.0" />
+                                 </children>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox fx:id="hb3" prefHeight="150.0" prefWidth="200.0">
+                           <children>
+                              <VBox fx:id="vbh2" prefHeight="150.0" prefWidth="200.0">
+                                 <children>
+                                    <StackPane fx:id="stack2" alignment="CENTER_LEFT" prefHeight="125.0" prefWidth="275.0">
+                                       <children>
+                                          <Rectangle fx:id="rect2" arcHeight="5.0" arcWidth="5.0" fill="#ffffff00" height="118.0" stroke="#3c4f57" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeType="INSIDE" strokeWidth="5.0" width="88.0">
+                                             <StackPane.margin>
+                                                <Insets left="35.0" />
+                                             </StackPane.margin>
+                                          </Rectangle>
+                                          <HBox fx:id="player2Cards" prefHeight="125.0" prefWidth="275.0" />
+                                       </children>
+                                    </StackPane>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets left="505.0" />
+                                 </HBox.margin>
+                              </VBox>
+                              <VBox fx:id="vbsplith2" prefHeight="150.0" prefWidth="275.0">
+                                 <children>
+                                    <HBox fx:id="splitPlayerCards2" prefHeight="125.0" prefWidth="275.0" />
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                        </HBox>
+                        <HBox prefHeight="100.0" prefWidth="200.0">
+                           <children>
+                              <Label fx:id="lblTotBet" text="Total bet on table:   $ ">
+                                 <HBox.margin>
+                                    <Insets left="20.0" top="40.0" />
+                                 </HBox.margin>
+                              </Label>
+                              <Label fx:id="lblDisplayTotBet" style="-fx-font-size: 18;" text="0">
+                                 <HBox.margin>
+                                    <Insets top="40.0" />
+                                 </HBox.margin>
+                              </Label>
+                           </children>
+                        </HBox>
+                     </children>
+                  </VBox>
+               </center>
+               <bottom>
+                  <HBox prefHeight="100.0">
+                     <children>
+                        <VBox fx:id="vBoxButtons" alignment="BASELINE_CENTER" prefHeight="145.0" style="-fx-background-color: #330000; -fx-border-width: 5;">
+                           <children>
+                              <HBox fx:id="hBoxGameButtons" prefHeight="51.0">
+                                 <children>
+                                    <Button fx:id="btnDealCards" mnemonicParsing="false" text="DEAL">
+                                       <HBox.margin>
+                                          <Insets left="20.0" top="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="btnHit" mnemonicParsing="false" text="HIT">
+                                       <HBox.margin>
+                                          <Insets top="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="btnSplit" mnemonicParsing="false" text="SPLIT">
+                                       <HBox.margin>
+                                          <Insets top="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="btnStand" mnemonicParsing="false" text="STAND">
+                                       <HBox.margin>
+                                          <Insets top="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="btnDoubleDown" mnemonicParsing="false" text="DOUBLE">
+                                       <HBox.margin>
+                                          <Insets top="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="btnSurrender" mnemonicParsing="false" text="SURRENDER">
+                                       <HBox.margin>
+                                          <Insets top="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Text fx:id="hand1Score" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                    <Text fx:id="dealerScore" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                    <Text fx:id="hand2Score" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                    <Text fx:id="hand3Score" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                    <Text fx:id="splitHand1Score" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                    <Text fx:id="splitHand2Score" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                    <Text fx:id="splitHand3Score" strokeType="OUTSIDE" strokeWidth="0.0" />
+                                 </children>
+                              </HBox>
+                              <HBox fx:id="hBoxBetButtons" prefHeight="94.0" prefWidth="1200.0">
+                                 <children>
+                                    <Button id="one" fx:id="btn1$" mnemonicParsing="false">
+                                       <HBox.margin>
+                                          <Insets bottom="20.0" left="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button id="five" fx:id="btn5$" mnemonicParsing="false">
+                                       <HBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button id="twentyfive" fx:id="btn25$" mnemonicParsing="false">
+                                       <HBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button id="fifty" fx:id="btn50$" mnemonicParsing="false">
+                                       <HBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button id="onehundred" fx:id="btn100$" mnemonicParsing="false">
+                                       <HBox.margin>
+                                          <Insets bottom="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Button fx:id="btnRemoveBet" mnemonicParsing="false" prefHeight="124.0" prefWidth="108.0" text="REMOVE" textAlignment="CENTER">
+                                       <HBox.margin>
+                                          <Insets bottom="20.0" right="20.0" />
+                                       </HBox.margin>
+                                    </Button>
+                                    <Label fx:id="lblBalance" alignment="CENTER_RIGHT" prefHeight="30.0" prefWidth="81.0" style="-fx-text-fill: gold;" text="Balance:  $">
+                                       <HBox.margin>
+                                          <Insets top="20.0" />
+                                       </HBox.margin></Label>
+                                    <Label fx:id="lblDisplayBalance" prefHeight="30.0" prefWidth="48.0" style="-fx-text-fill: gold;" text=" 500">
+                                       <HBox.margin>
+                                          <Insets top="20.0" />
+                                       </HBox.margin></Label>
+                                    <VBox prefHeight="114.0" prefWidth="144.0" spacing="4.5">
+                                       <children>
+                                          <RadioButton fx:id="rbtnOne" mnemonicParsing="false" prefWidth="129.0" text="ONE HAND">
+                                             <VBox.margin>
+                                                <Insets />
+                                             </VBox.margin>
+                                          </RadioButton>
+                                          <RadioButton fx:id="rbtnTwo" mnemonicParsing="false" prefWidth="129.0" text="TWO HANDS" textAlignment="JUSTIFY" />
+                                          <RadioButton fx:id="rbtnThree" mnemonicParsing="false" prefHeight="21.0" prefWidth="145.0" text="THREE HANDS" />
+                                          <Button fx:id="btnChangeNumOfHands" mnemonicParsing="false" prefWidth="145.0" text="CHANGE" />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="20.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                    <VBox prefHeight="94.0" spacing="7.0">
+                                       <children>
+                                          <Button fx:id="btnLeaderBoard" mnemonicParsing="false" prefHeight="31.0" prefWidth="150.0" text="LEADER BOARD" />
+                                          <Button mnemonicParsing="false" prefHeight="31.0" prefWidth="150.0" text="HOW TO PLAY" />
+                                          <Button fx:id="btnSaveNQuit" mnemonicParsing="false" prefWidth="150.0" text="SAVE &amp; QUIT" />
+                                       </children>
+                                       <HBox.margin>
+                                          <Insets left="30.0" right="20.0" />
+                                       </HBox.margin>
+                                    </VBox>
+                                 </children>
+                              </HBox>
+                           </children>
+                        </VBox>
+                     </children>
+                     <BorderPane.margin>
+                        <Insets />
+                     </BorderPane.margin>
+                  </HBox>
+               </bottom>
+               <top>
+                  <HBox prefHeight="173.0" prefWidth="1200.0" BorderPane.alignment="CENTER">
+                     <children>
+                        <HBox fx:id="dealerCards" prefHeight="125.0" prefWidth="782.0" spacing="30.0">
+                           <HBox.margin>
+                              <Insets left="300.0" top="20.0" />
+                           </HBox.margin>
+                        </HBox>
+                        <HBox prefHeight="83.0" prefWidth="99.0">
+                           <children>
+                              <VBox prefHeight="50.0" prefWidth="99.0" style="-fx-background-color: #330000; -fx-border-color: #471919; -fx-border-width: 3px;">
+                                 <children>
+                                    <Label text="MIN:  $5">
+                                       <VBox.margin>
+                                          <Insets left="10.0" top="9.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                    <Label text="MAX: $150">
+                                       <VBox.margin>
+                                          <Insets left="10.0" />
+                                       </VBox.margin>
+                                    </Label>
+                                 </children>
+                                 <HBox.margin>
+                                    <Insets bottom="90.0" top="20.0" />
+                                 </HBox.margin>
+                              </VBox>
+                           </children>
+                           <HBox.margin>
+                              <Insets />
+                           </HBox.margin>
+                        </HBox>
+                     </children>
+                  </HBox>
+               </top>
+            </BorderPane>
+            <Button fx:id="btnClose" mnemonicParsing="false" text="CLOSE">
+               <StackPane.margin>
+                  <Insets right="33.0" />
+               </StackPane.margin>
+            </Button>
+            <Text fx:id="txtGameOver" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 50;" text="GAME OVER">
+               <StackPane.margin>
+                  <Insets bottom="90.0" right="33.0" />
+               </StackPane.margin>
+            </Text>
+         </children>
+      </StackPane>
+   </children>
+</AnchorPane>

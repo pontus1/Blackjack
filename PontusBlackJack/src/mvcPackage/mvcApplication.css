@@ -1,0 +1,83 @@
+/*  Fudgy Pink: 		#d9b084    */
+/*  Grayish Purple: 	#453932    */
+/*  Light Blue: 		#3c4f57    */
+/*  Lighter Gray/Blue:  #7e7e80    */
+
+
+.root {
+-fx-base: #330000; /*rgb(100, 50, 50);*/
+-fx-background: #2F2F3D; /*#191928; Green: #264d00 */
+-fx-control-inner-background: rgb(50, 50, 50);
+}
+ 
+.tab {
+-fx-background-color: linear-gradient(to top, -fx-base, derive(-fx-base,30%));
+}
+ 
+.menu-bar {
+-fx-background-color: linear-gradient(to bottom, -fx-base, derive(-fx-base,30%));
+}
+ 
+.tool-bar:horizontal {
+-fx-background-color:
+linear-gradient(to bottom, derive(-fx-base,+50%), derive(-fx-base,-40%), derive(-fx-base,-20%));
+}
+ 
+#one {
+ -fx-graphic: "images/chip1.png";
+}
+#five {
+ -fx-graphic: "images/chip5.png";
+}
+#twentyfive {
+ -fx-graphic: "images/chip25.png";
+}
+#fifty {
+ -fx-graphic: "images/chip50.png";
+}
+#onehundred {
+ -fx-graphic: "images/chip100.png";
+}
+
+.button:hover {
+-fx-text-fill: gold;
+  }
+
+.text {
+	 -fx-font-family: 'Bodoni MT';
+	-fx-fill-color: #d9b084;
+}
+ 
+.button:hover {
+-fx-background-color: -fx-shadow-highlight-color, -fx-outer-border, -fx-inner-border, -fx-body-color;
+-fx-color: -fx-hover-base;
+}
+ 
+.split-pane:horizontal > * > .split-pane-divider {
+-fx-border-color: transparent -fx-base transparent -fx-base;
+-fx-background-color: transparent, derive(-fx-base,20%);
+-fx-background-insets: 0, 0 1 0 1;
+}
+ 
+.my-gridpane {
+-fx-background-color: radial-gradient(radius 100%, derive(-fx-base,20%), derive(-fx-base,-20%));
+}
+ 
+.label {
+-fx-text-fill: #d9b084; 
+} 
+
+.radio-button {
+	-fx-text-fill: #d9b084; 
+}
+
+.radio-button:focused {
+    -fx-color: gold;
+    }
+   
+ 
+.separator-label {
+-fx-text-fill: orange;
+
+}
+
